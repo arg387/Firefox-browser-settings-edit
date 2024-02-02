@@ -1,1 +1,1 @@
-# Firefox-brower-settings-edit
+#Please read the codes in the User.js file properly before using. 
