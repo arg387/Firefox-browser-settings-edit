@@ -1,9 +1,0 @@
-:root {
-  /* Change to any color you want */
-   --firefoxcss-colored-sound-tab: #330fd382 !important; 
-}
-
-#tabbrowser-tabs .tabbrowser-tab:is([soundplaying]) .tab-background:not([selected]) {
-  background-color: var(--firefoxcss-colored-sound-tab) !important;
-  transition: background-color 500ms ease !important;
-}
