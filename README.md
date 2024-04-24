@@ -13,3 +13,8 @@
 * Open the `User.js` file.
 * Now paste the copied code inside your `User.js` file. Then save it and close it.
 * Close the Firefox browser and reopen it. All the changes will be applied.
+
+
+# preview:
+
+![](Recording-2024-04-24-113949.gif)
