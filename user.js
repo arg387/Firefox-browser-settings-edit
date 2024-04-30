@@ -1,4 +1,3 @@
-//
 /* You may copy+paste this file and use it as it is.
  *
  * If you make changes to your about:config while the program is running, the
@@ -8,15 +7,8 @@
  */
 
 /****************************************************************************
- * Betterfox                                                                *
- * "Ad meliora"                                                             *
- * version: 122.1                                                           *
- * url: https://github.com/yokoffing/Betterfox                              *
-****************************************************************************/
-
-/****************************************************************************
- * SECTION: FASTFOX                                                         *
-****************************************************************************/
+ * BASIC SETTINGS
+ ****************************************************************************/
 /** GENERAL ***/
 user_pref("content.notify.interval", 100000);
 
@@ -56,9 +48,7 @@ user_pref("dom.enable_web_task_scheduling", true);
 user_pref("layout.css.has-selector.enabled", true);
 user_pref("dom.security.sanitizer.enabled", true);
 
-/****************************************************************************
- * SECTION: SECUREFOX                                                       *
-****************************************************************************/
+
 /** TRACKING PROTECTION ***/
 user_pref("browser.contentblocking.category", "strict");
 user_pref("urlclassifier.trackingSkipURLs", "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com");
@@ -168,9 +158,7 @@ user_pref("captivedetect.canonicalURL", "");
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
 
-/****************************************************************************
- * SECTION: PESKYFOX                                                        *
-****************************************************************************/
+
 /** MOZILLA UI ***/
 user_pref("browser.privatebrowsing.vpnpromourl", "");
 user_pref("extensions.getAddons.showPane", false);
@@ -233,7 +221,4 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
  // PREF: allow websites to ask you to receive site notifications
 user_pref("permissions.default.desktop-notification", 0);           
 
-// visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
-// visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
-// Enter your personal overrides below this line:
 /////////////////////////////////////
