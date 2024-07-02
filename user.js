@@ -6,9 +6,10 @@
  * To make lasting changes to preferences, you will have to edit the user.js.
  */
 
-/****************************************************************************
- * BASIC SETTINGS
- ****************************************************************************/
+
+
+/************************************************************
+****************************************************************************/
 /** GENERAL ***/
 user_pref("content.notify.interval", 100000);
 
@@ -34,21 +35,22 @@ user_pref("network.http.max-persistent-connections-per-server", 10);
 user_pref("network.http.max-urgent-start-excessive-connections-per-host", 5);
 user_pref("network.http.pacing.requests.enabled", false);
 user_pref("network.dnsCacheExpiration", 3600);
-user_pref("network.dns.max_high_priority_threads", 8);
 user_pref("network.ssl_tokens_cache_capacity", 10240);
 
 /** SPECULATIVE LOADING ***/
 user_pref("network.dns.disablePrefetch", true);
+user_pref("network.dns.disablePrefetchFromHTTPS", true);
 user_pref("network.prefetch-next", false);
 user_pref("network.predictor.enabled", false);
+user_pref("network.predictor.enable-prefetch", false);
 
 /** EXPERIMENTAL ***/
 user_pref("layout.css.grid-template-masonry-value.enabled", true);
 user_pref("dom.enable_web_task_scheduling", true);
-user_pref("layout.css.has-selector.enabled", true);
 user_pref("dom.security.sanitizer.enabled", true);
 
-
+/****************************************************************************
+****************************************************************************/
 /** TRACKING PROTECTION ***/
 user_pref("browser.contentblocking.category", "strict");
 user_pref("urlclassifier.trackingSkipURLs", "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com");
@@ -139,7 +141,6 @@ user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.coverage.opt-out", true);
 user_pref("toolkit.coverage.opt-out", true);
 user_pref("toolkit.coverage.endpoint.base", "");
-user_pref("browser.ping-centre.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 
@@ -158,7 +159,9 @@ user_pref("captivedetect.canonicalURL", "");
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
 
+/****************************************************************************
 
+****************************************************************************/
 /** MOZILLA UI ***/
 user_pref("browser.privatebrowsing.vpnpromourl", "");
 user_pref("extensions.getAddons.showPane", false);
@@ -178,7 +181,7 @@ user_pref("browser.compactmode.show", true);
 user_pref("browser.display.focus_ring_on_anything", true);
 user_pref("browser.display.focus_ring_style", 0);
 user_pref("browser.display.focus_ring_width", 0);
-user_pref("layout.css.prefers-color-scheme.content-override", 0);
+user_pref("layout.css.prefers-color-scheme.content-override", 2);
 user_pref("browser.privateWindowSeparation.enabled", false); // WINDOWS
 
 /** COOKIE BANNER HANDLING ***/
@@ -216,9 +219,17 @@ user_pref("browser.menu.showViewImageInfo", true);
 user_pref("findbar.highlightAll", true);
 user_pref("layout.word_select.eat_space_to_next_word", false);
 
-////////////////////////////////////
-// START: MY OVERRIDES                                       
- // PREF: allow websites to ask you to receive site notifications
-user_pref("permissions.default.desktop-notification", 0);           
+/****************************************************************************
+ * START: MY OVERRIDES                                                      *
+****************************************************************************/
 
-/////////////////////////////////////
+// Enter your personal overrides below this line:
+
+/************************************************************
+****************************************************************************/
+
+// Enter your scrolling overrides below this line:
+
+/****************************************************************************
+*
+****************************************************************************/
