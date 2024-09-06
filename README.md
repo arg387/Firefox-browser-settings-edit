@@ -21,7 +21,7 @@
 # Made by using
 
 1. ![Firefox-Mod-Blur
-](https://github.com/Alan-Kuan/Firefox-Mod-Blur#page_with_curl-installer-script)
+](https://github.com/datguypiko/Firefox-Mod-Blur)
 2. ![Betterfox](https://github.com/yokoffing/Betterfox?tab=readme-ov-file)
 
 
