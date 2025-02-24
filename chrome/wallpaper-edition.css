@@ -14,12 +14,14 @@
   color: #fbfbfe !important;
   }
 }
-
 /* Wallapaper edition. Change wallpaper.jpg to wallpaper.png if used different file extension */
+/* New changes date-2025-02-24 */
+/* Wallpaper of private tabs can also be changed now. */
+
 @-moz-document url("about:home"),
 url("about:newtab") {
   body {
-    background: url("ASSETS/wallpaper/illustration-anime-character-rain.jpg") center/cover no-repeat fixed !important;
+    background: url("ASSETS/wallpaper/a_cartoon_of_a_lake_with_rocks_and_flags.jpg") center/cover no-repeat fixed !important;
   }
 
   .outer-wrapper .search-wrapper .search-handoff-button {
@@ -93,3 +95,9 @@ url("about:newtab") {
     background-color: transparent !important;
   }
 }
+@-moz-document url(about:privatebrowsing) {
+  body {
+    background: url("ASSETS/wallpaper/a_street_with_buildings_and_signs.png") center/cover no-repeat fixed !important;
+  }
+}
+/* New changes date-2025-02-24 */
