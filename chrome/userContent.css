@@ -11,6 +11,7 @@
 =====================================================================*/
 
 
+
 @media (prefers-color-scheme: dark) {
   :root {
     --firefoxcss-main-bg-color: hsl(220, 2%, 13%);
@@ -156,17 +157,35 @@ body {
   --newtab-search-icon: url("chrome://global/skin/icons/search-glass.svg") !important;
 
 }
+/* New changes date-2025-02-24 */
+/* Added new icons and texts for private and normal browsing. Change the text, font-family and size of text here */
 
-@-moz-document url("about:privatebrowsing") {
+@-moz-document url(chrome://browser/content/browser.xul), url("about:privatebrowsing") {
   body {
     background-color: var(--firefoxcss-main-bg-color) !important;
     background-size: auto;
     background-size: cover !important;
   }
 
-  /* html.private {
+  .logo-and-wordmark > .logo {
+    background: url(ASSETS/icons/fox-logo-removebg.png)  !important;
+    background-size: 200px 200px !important;
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .logo-and-wordmark > .wordmark{
+    background: none !important;
+    width: unset !important;
+  }
+  .logo-and-wordmark > .wordmark::before{
+    content: "Hello argha";
+    font-size: 40pt;
+    font-family: "Paradox King Script";
+    color: #f9e7c5 !important;
+  }
+/*   html.private {
 		background-color: #1e1e1e80 !important;
-		background-image: url(ASSETS/icons/.jpg) !important ;
+		background-image: url(ASSETS/icons/train-sideview.png) !important ;
 		background-size: cover  !important;
 	} */
 
@@ -231,14 +250,34 @@ body {
     background-size: 20px !important;
   }
 }
+/* New changes date-2025-02-24 */
+/* Added new icons and texts for private and normal browsing. Change the text, font-family and size of text here */
 
-@-moz-document url("about:home"),
+@-moz-document url(chrome://browser/content/browser.xul), url("about:home"),
 url("about:newtab") {
 
   body {
     --newtab-background-color: var(--firefoxcss-main-bg-color) !important;
     background-size: cover !important;
   }
+
+  .logo-and-wordmark > .logo {
+    background: url(ASSETS/icons/fox-logo-removebg.png) !important;
+    background-size: 200px 200px !important;
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .logo-and-wordmark > .wordmark{
+    background: none !important;
+    width: unset !important;
+  }
+  .logo-and-wordmark > .wordmark::before{
+    content: "Hello argha";
+    font-size: 40pt;
+    font-family: "Paradox King Script";
+    color: #060606 !important;
+  }
+
 
   /* For background blur */
   /* .outer-wrapper {
@@ -421,18 +460,18 @@ url("about:newtab") {
     flex-basis: 20% !important;
   }
 
-  .search-wrapper .logo-and-wordmark .logo {
+/*   .search-wrapper .logo-and-wordmark .logo {
     background-size: 60px !important;
     height: 60px !important;
     width: 60px !important;
-  }
+  } */
 
-  .search-wrapper .logo-and-wordmark .wordmark {
+/*   .search-wrapper .logo-and-wordmark .wordmark {
     background-size: 132px !important;
     height: 42px !important;
     margin-inline-start: 12px !important;
     width: 144px !important;
-  }
+  } */
 
   .outer-wrapper .search-wrapper {
     padding: 0px !important;
