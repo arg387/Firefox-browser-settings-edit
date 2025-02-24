@@ -1,5 +1,5 @@
-# Please read the codes in the User.js file properly before using. 
-*********************************************************************
+# Please read the codes in the User.js file properly before using. If you have any problem please ask me.
+*********************************************************************************************************
 
 
 # How to use:
@@ -16,7 +16,7 @@
 
 # preview:
 
-![Untitled video - Made with Clipchamp](https://github.com/user-attachments/assets/ff621440-919c-48b6-bf85-8c37e6a201c9)
+![](https://github.com/arg387/Firefox-browser-settings-edit/blob/main/Recording%202025-02-24%20150023.gif)
 
 
 # Made by using
