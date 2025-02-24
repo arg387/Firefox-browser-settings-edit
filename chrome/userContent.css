@@ -159,7 +159,6 @@ body {
 }
 /* New changes date-2025-02-24 */
 /* Added new icons and texts for private and normal browsing. Change the text, font-family and size of text here */
-
 @-moz-document url(chrome://browser/content/browser.xul), url("about:privatebrowsing") {
   body {
     background-color: var(--firefoxcss-main-bg-color) !important;
@@ -169,9 +168,9 @@ body {
 
   .logo-and-wordmark > .logo {
     background: url(ASSETS/icons/fox-logo-removebg.png)  !important;
-    background-size: 200px 200px !important;
-    width: 200px !important;
-    height: 200px !important;
+    background-size: 150px 150px !important;
+    width: 150px !important;
+    height: 150px !important;
   }
   .logo-and-wordmark > .wordmark{
     background: none !important;
@@ -179,7 +178,7 @@ body {
   }
   .logo-and-wordmark > .wordmark::before{
     content: "Hello argha";
-    font-size: 40pt;
+    font-size: 50pt;
     font-family: "Paradox King Script";
     color: #f9e7c5 !important;
   }
@@ -249,10 +248,30 @@ body {
   .private .search-inner-wrapper #search-handoff-button {
     background-size: 20px !important;
   }
+  @media (max-width: 768px) {
+    .logo-and-wordmark > .logo {
+      background-size: 100px 100px !important;
+      width: 100px !important;
+      height: 100px !important;
+    }
+    .logo-and-wordmark > .wordmark::before {
+      font-size: 30pt !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .logo-and-wordmark > .logo {
+      background-size: 80px 80px !important;
+      width: 80px !important;
+      height: 80px !important;
+    }
+    .logo-and-wordmark > .wordmark::before {
+      font-size: 20pt !important;
+    }
+  }
 }
 /* New changes date-2025-02-24 */
 /* Added new icons and texts for private and normal browsing. Change the text, font-family and size of text here */
-
 @-moz-document url(chrome://browser/content/browser.xul), url("about:home"),
 url("about:newtab") {
 
@@ -261,11 +280,11 @@ url("about:newtab") {
     background-size: cover !important;
   }
 
-  .logo-and-wordmark > .logo {
+  .search-wrapper .logo-and-wordmark > .logo {
     background: url(ASSETS/icons/fox-logo-removebg.png) !important;
-    background-size: 200px 200px !important;
-    width: 200px !important;
-    height: 200px !important;
+    background-size: 150px 150px !important;
+    width: 150px !important;
+    height: 150px !important;
   }
   .logo-and-wordmark > .wordmark{
     background: none !important;
@@ -573,6 +592,27 @@ url("about:newtab") {
 
     .ds-outer-wrapper-breakpoint-override main {
       width: 266px !important;
+    }
+  }
+  @media (max-width: 768px) {
+    .logo-and-wordmark > .logo {
+      background-size: 100px 100px !important;
+      width: 100px !important;
+      height: 100px !important;
+    }
+    .logo-and-wordmark > .wordmark::before {
+      font-size: 30pt !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .logo-and-wordmark > .logo {
+      background-size: 80px 80px !important;
+      width: 80px !important;
+      height: 80px !important;
+    }
+    .logo-and-wordmark > .wordmark::before {
+      font-size: 20pt !important;
     }
   }
 
